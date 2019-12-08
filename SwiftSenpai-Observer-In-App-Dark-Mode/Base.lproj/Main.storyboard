@@ -11,7 +11,7 @@
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="SwiftSenpai_Observer_In_App_Dark_Mode" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -110,13 +110,22 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jfA-ob-75r">
                                 <rect key="frame" x="182.5" y="432.5" width="51" height="31"/>
                                 <connections>
-                                    <action selector="turnOnDarkModeSwitchValueChanged:" destination="lIx-iB-wRE" eventType="valueChanged" id="Sqs-3y-9V4"/>
+                                    <action selector="darkModeSwitchValueChanged:" destination="lIx-iB-wRE" eventType="valueChanged" id="82A-O1-9Yq"/>
                                 </connections>
                             </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dark Mode" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WjP-nq-ejj">
+                                <rect key="frame" x="20" y="394" width="374" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="WjP-nq-ejj" firstAttribute="leading" secondItem="WCF-1b-fH1" secondAttribute="leading" constant="20" id="Xua-z4-sN8"/>
+                            <constraint firstItem="jfA-ob-75r" firstAttribute="top" secondItem="WjP-nq-ejj" secondAttribute="bottom" constant="8.5" id="c1O-5Y-YAd"/>
                             <constraint firstItem="jfA-ob-75r" firstAttribute="centerY" secondItem="ZDr-Np-ypn" secondAttribute="centerY" id="dBN-n9-rYQ"/>
+                            <constraint firstItem="WCF-1b-fH1" firstAttribute="trailing" secondItem="WjP-nq-ejj" secondAttribute="trailing" constant="20" id="kdH-C4-fEJ"/>
                             <constraint firstItem="jfA-ob-75r" firstAttribute="centerX" secondItem="ZDr-Np-ypn" secondAttribute="centerX" id="sGx-SJ-XQ5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WCF-1b-fH1"/>
@@ -125,7 +134,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KlB-PX-d0A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1796" y="129"/>
+            <point key="canvasLocation" x="1795.6521739130437" y="128.57142857142856"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="L1D-PQ-CZQ">

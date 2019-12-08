@@ -13,8 +13,11 @@ class SettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        print("SettingsViewController")
+        startObserving(&UserInterfaceStyleManager.shared)
     }
 
-
+    @IBAction func darkModeSwitchValueChanged(_ sender: UISwitch) {
+        UserInterfaceStyleManager.shared.updateUserInterfaceStyle(sender.isOn)
+    }
+    
 }

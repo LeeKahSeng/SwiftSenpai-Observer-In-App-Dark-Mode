@@ -2,7 +2,7 @@
 //  MainViewController.swift
 //  SwiftSenpai-Observer-In-App-Dark-Mode
 //
-//  Created by Lee Kah Seng on 07/12/2019.
+//  Created by Lee Kah Seng on 08/12/2019.
 //  Copyright © 2019 Lee Kah Seng. All rights reserved.
 //
 
@@ -12,9 +12,7 @@ class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        startObserving(&UserInterfaceStyleManager.shared)
     }
-
-
 }
-
