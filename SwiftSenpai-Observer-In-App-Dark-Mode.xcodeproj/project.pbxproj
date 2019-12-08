@@ -12,7 +12,7 @@
 		F94CA64A239D20E0002E0FAF /* WeakStyleObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94CA647239D20E0002E0FAF /* WeakStyleObserver.swift */; };
 		F99579C5239BBFA4003A9F3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99579C4239BBFA4003A9F3B /* AppDelegate.swift */; };
 		F99579C7239BBFA4003A9F3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99579C6239BBFA4003A9F3B /* SceneDelegate.swift */; };
-		F99579C9239BBFA4003A9F3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99579C8239BBFA4003A9F3B /* ViewController.swift */; };
+		F99579C9239BBFA4003A9F3B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99579C8239BBFA4003A9F3B /* MainViewController.swift */; };
 		F99579CC239BBFA5003A9F3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F99579CA239BBFA5003A9F3B /* Main.storyboard */; };
 		F99579CE239BBFAB003A9F3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F99579CD239BBFAB003A9F3B /* Assets.xcassets */; };
 		F99579D1239BBFAB003A9F3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F99579CF239BBFAB003A9F3B /* LaunchScreen.storyboard */; };
@@ -27,7 +27,7 @@
 		F99579C1239BBFA4003A9F3B /* SwiftSenpai-Observer-In-App-Dark-Mode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftSenpai-Observer-In-App-Dark-Mode.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F99579C4239BBFA4003A9F3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F99579C6239BBFA4003A9F3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F99579C8239BBFA4003A9F3B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F99579C8239BBFA4003A9F3B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F99579CB239BBFA5003A9F3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F99579CD239BBFAB003A9F3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F99579D0239BBFAB003A9F3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -79,7 +79,7 @@
 				F94CA644239D20D4002E0FAF /* Observer */,
 				F99579C4239BBFA4003A9F3B /* AppDelegate.swift */,
 				F99579C6239BBFA4003A9F3B /* SceneDelegate.swift */,
-				F99579C8239BBFA4003A9F3B /* ViewController.swift */,
+				F99579C8239BBFA4003A9F3B /* MainViewController.swift */,
 				F99579D8239C0C64003A9F3B /* SettingsViewController.swift */,
 				F99579DA239C0C7A003A9F3B /* LightModeOnlyViewController.swift */,
 				F99579CA239BBFA5003A9F3B /* Main.storyboard */,
@@ -161,7 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F99579C9239BBFA4003A9F3B /* ViewController.swift in Sources */,
+				F99579C9239BBFA4003A9F3B /* MainViewController.swift in Sources */,
 				F99579C5239BBFA4003A9F3B /* AppDelegate.swift in Sources */,
 				F94CA648239D20E0002E0FAF /* UserInterfaceStyleManager.swift in Sources */,
 				F94CA64A239D20E0002E0FAF /* WeakStyleObserver.swift in Sources */,

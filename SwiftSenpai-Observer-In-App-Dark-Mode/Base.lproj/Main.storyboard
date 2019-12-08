@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftSenpai_Observer_In_App_Dark_Mode" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -106,7 +106,19 @@
                     <view key="view" contentMode="scaleToFill" id="ZDr-Np-ypn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jfA-ob-75r">
+                                <rect key="frame" x="182.5" y="432.5" width="51" height="31"/>
+                                <connections>
+                                    <action selector="turnOnDarkModeSwitchValueChanged:" destination="lIx-iB-wRE" eventType="valueChanged" id="Sqs-3y-9V4"/>
+                                </connections>
+                            </switch>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="jfA-ob-75r" firstAttribute="centerY" secondItem="ZDr-Np-ypn" secondAttribute="centerY" id="dBN-n9-rYQ"/>
+                            <constraint firstItem="jfA-ob-75r" firstAttribute="centerX" secondItem="ZDr-Np-ypn" secondAttribute="centerX" id="sGx-SJ-XQ5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="WCF-1b-fH1"/>
                     </view>
                     <navigationItem key="navigationItem" id="VpR-0n-ENc"/>
