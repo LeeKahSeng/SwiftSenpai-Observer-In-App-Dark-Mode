@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F91F5692239D28C0006E67BF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91F5691239D28C0006E67BF /* MainViewController.swift */; };
+		F91F5696239D2B00006E67BF /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91F5695239D2B00006E67BF /* MyNavigationController.swift */; };
 		F94CA648239D20E0002E0FAF /* UserInterfaceStyleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94CA645239D20E0002E0FAF /* UserInterfaceStyleManager.swift */; };
 		F94CA649239D20E0002E0FAF /* UserInterfaceStyleObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94CA646239D20E0002E0FAF /* UserInterfaceStyleObserver.swift */; };
 		F94CA64A239D20E0002E0FAF /* WeakStyleObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94CA647239D20E0002E0FAF /* WeakStyleObserver.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		F91F5691239D28C0006E67BF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		F91F5695239D2B00006E67BF /* MyNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNavigationController.swift; sourceTree = "<group>"; };
 		F94CA645239D20E0002E0FAF /* UserInterfaceStyleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInterfaceStyleManager.swift; sourceTree = "<group>"; };
 		F94CA646239D20E0002E0FAF /* UserInterfaceStyleObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInterfaceStyleObserver.swift; sourceTree = "<group>"; };
 		F94CA647239D20E0002E0FAF /* WeakStyleObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeakStyleObserver.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				F99579CF239BBFAB003A9F3B /* LaunchScreen.storyboard */,
 				F99579D2239BBFAB003A9F3B /* Info.plist */,
 				F91F5691239D28C0006E67BF /* MainViewController.swift */,
+				F91F5695239D2B00006E67BF /* MyNavigationController.swift */,
 			);
 			path = "SwiftSenpai-Observer-In-App-Dark-Mode";
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 				F99579C5239BBFA4003A9F3B /* AppDelegate.swift in Sources */,
 				F94CA648239D20E0002E0FAF /* UserInterfaceStyleManager.swift in Sources */,
 				F94CA64A239D20E0002E0FAF /* WeakStyleObserver.swift in Sources */,
+				F91F5696239D2B00006E67BF /* MyNavigationController.swift in Sources */,
 				F99579C7239BBFA4003A9F3B /* SceneDelegate.swift in Sources */,
 				F99579D9239C0C64003A9F3B /* SettingsViewController.swift in Sources */,
 				F94CA649239D20E0002E0FAF /* UserInterfaceStyleObserver.swift in Sources */,

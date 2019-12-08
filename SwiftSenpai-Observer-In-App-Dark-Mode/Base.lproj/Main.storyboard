@@ -48,7 +48,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Light Mode Only"/>
                                 <connections>
-                                    <segue destination="6Al-SS-nPX" kind="show" id="Czv-9T-U5H"/>
+                                    <segue destination="6Al-SS-nPX" kind="presentation" id="Czv-9T-U5H"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -74,11 +74,11 @@
             <objects>
                 <viewController id="6Al-SS-nPX" customClass="LightModeOnlyViewController" customModule="SwiftSenpai_Observer_In_App_Dark_Mode" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="W5a-Lh-5Kw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3lf-HJ-W9C">
-                                <rect key="frame" x="87" y="384" width="240" height="128"/>
+                                <rect key="frame" x="87" y="357" width="240" height="128"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="htV-bS-zKS"/>
@@ -136,10 +136,10 @@
             </objects>
             <point key="canvasLocation" x="1795.6521739130437" y="128.57142857142856"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--My Navigation Controller-->
         <scene sceneID="L1D-PQ-CZQ">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WbX-vr-gwZ" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WbX-vr-gwZ" customClass="MyNavigationController" customModule="SwiftSenpai_Observer_In_App_Dark_Mode" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FrH-GN-G5c">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
