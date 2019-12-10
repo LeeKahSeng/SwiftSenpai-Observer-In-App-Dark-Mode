@@ -77,13 +77,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3lf-HJ-W9C">
-                                <rect key="frame" x="87" y="357" width="240" height="128"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3lf-HJ-W9C" customClass="KSRoundedCornerView" customModule="SwiftSenpai_Observer_In_App_Dark_Mode" customModuleProvider="target">
+                                <rect key="frame" x="87" y="321" width="240" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subview that follow in app dark mode setting" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJV-86-uRO">
+                                        <rect key="frame" x="16" y="16" width="208" height="168"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
+                                    <constraint firstItem="cJV-86-uRO" firstAttribute="top" secondItem="3lf-HJ-W9C" secondAttribute="top" constant="16" id="8Ve-Ys-cMg"/>
+                                    <constraint firstItem="cJV-86-uRO" firstAttribute="leading" secondItem="3lf-HJ-W9C" secondAttribute="leading" constant="16" id="93e-FP-M8u"/>
                                     <constraint firstAttribute="width" constant="240" id="htV-bS-zKS"/>
-                                    <constraint firstAttribute="height" constant="128" id="kPJ-K7-0b2"/>
+                                    <constraint firstAttribute="trailing" secondItem="cJV-86-uRO" secondAttribute="trailing" constant="16" id="iwg-AH-8t2"/>
+                                    <constraint firstAttribute="height" constant="200" id="kPJ-K7-0b2"/>
+                                    <constraint firstAttribute="bottom" secondItem="cJV-86-uRO" secondAttribute="bottom" constant="16" id="umT-bN-CUC"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -97,7 +117,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oqY-6i-I5X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1796" y="857"/>
+            <point key="canvasLocation" x="1795.6521739130437" y="856.47321428571422"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="ptB-s4-K7L">

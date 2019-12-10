@@ -34,3 +34,19 @@ extension UIViewController: UserInterfaceStyleObserver {
         setNeedsStatusBarAppearanceUpdate()
     }
 }
+
+extension UIView: UserInterfaceStyleObserver {
+    
+    func startObserving(_ userInterfaceStyleManager: inout UserInterfaceStyleManager) {
+        // Add view as observer of UserInterfaceStyleManager
+        userInterfaceStyleManager.addObserver(self)
+        
+        // Change view to desire style when start observing
+        overrideUserInterfaceStyle = userInterfaceStyleManager.currentStyle
+    }
+    
+    func userInterfaceStyleManager(_ manager: UserInterfaceStyleManager, didChangeStyle style: UIUserInterfaceStyle) {
+        // Set user interface style of UIView
+        overrideUserInterfaceStyle = style
+    }
+}

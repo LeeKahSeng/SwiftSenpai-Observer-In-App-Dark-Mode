@@ -19,6 +19,7 @@
 		F99579D1239BBFAB003A9F3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F99579CF239BBFAB003A9F3B /* LaunchScreen.storyboard */; };
 		F99579D9239C0C64003A9F3B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99579D8239C0C64003A9F3B /* SettingsViewController.swift */; };
 		F99579DB239C0C7A003A9F3B /* LightModeOnlyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99579DA239C0C7A003A9F3B /* LightModeOnlyViewController.swift */; };
+		F9A938C2239F2756007F4E63 /* KSRoundedCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A938C1239F2756007F4E63 /* KSRoundedCornerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		F99579D2239BBFAB003A9F3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F99579D8239C0C64003A9F3B /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		F99579DA239C0C7A003A9F3B /* LightModeOnlyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightModeOnlyViewController.swift; sourceTree = "<group>"; };
+		F9A938C1239F2756007F4E63 /* KSRoundedCornerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSRoundedCornerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				F99579D2239BBFAB003A9F3B /* Info.plist */,
 				F91F5691239D28C0006E67BF /* MainViewController.swift */,
 				F91F5695239D2B00006E67BF /* MyNavigationController.swift */,
+				F9A938C1239F2756007F4E63 /* KSRoundedCornerView.swift */,
 			);
 			path = "SwiftSenpai-Observer-In-App-Dark-Mode";
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 				F94CA64A239D20E0002E0FAF /* WeakStyleObserver.swift in Sources */,
 				F91F5696239D2B00006E67BF /* MyNavigationController.swift in Sources */,
 				F99579C7239BBFA4003A9F3B /* SceneDelegate.swift in Sources */,
+				F9A938C2239F2756007F4E63 /* KSRoundedCornerView.swift in Sources */,
 				F99579D9239C0C64003A9F3B /* SettingsViewController.swift in Sources */,
 				F94CA649239D20E0002E0FAF /* UserInterfaceStyleObserver.swift in Sources */,
 				F99579DB239C0C7A003A9F3B /* LightModeOnlyViewController.swift in Sources */,
