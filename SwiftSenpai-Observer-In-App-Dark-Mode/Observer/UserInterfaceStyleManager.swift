@@ -11,12 +11,14 @@ import UIKit
 
 struct UserInterfaceStyleManager {
     
+    static let userInterfaceStyleDarkModeOn = "userInterfaceStyleDarkModeOn";
+    
     static var shared = UserInterfaceStyleManager()
     private var observers = [ObjectIdentifier : WeakStyleObserver]()
     
     private init() { }
     
-    private(set) var currentStyle: UIUserInterfaceStyle = .dark {
+    private(set) var currentStyle: UIUserInterfaceStyle = UserDefaults.standard.bool(forKey: UserInterfaceStyleManager.userInterfaceStyleDarkModeOn) ? .dark : .light {
         didSet {
             if currentStyle != oldValue {
                 // Trigger notification when currentStyle value changed

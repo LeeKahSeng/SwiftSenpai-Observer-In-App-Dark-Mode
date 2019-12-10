@@ -131,6 +131,9 @@
                         <viewLayoutGuide key="safeArea" id="WCF-1b-fH1"/>
                     </view>
                     <navigationItem key="navigationItem" id="VpR-0n-ENc"/>
+                    <connections>
+                        <outlet property="darkModeSwitch" destination="jfA-ob-75r" id="vIt-bo-YyM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KlB-PX-d0A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

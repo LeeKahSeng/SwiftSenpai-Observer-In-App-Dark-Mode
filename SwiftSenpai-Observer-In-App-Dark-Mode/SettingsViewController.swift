@@ -9,15 +9,28 @@
 import UIKit
 
 class SettingsViewController: UIViewController {
-
+    
+    @IBOutlet weak var darkModeSwitch: UISwitch!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // Set switch status
+        darkModeSwitch.isOn = UserInterfaceStyleManager.shared.currentStyle == .dark
+        
+        // Start observing style change
         startObserving(&UserInterfaceStyleManager.shared)
     }
 
     @IBAction func darkModeSwitchValueChanged(_ sender: UISwitch) {
-        UserInterfaceStyleManager.shared.updateUserInterfaceStyle(sender.isOn)
+        
+        let darkModeOn = sender.isOn
+        
+        // Store in UserDefaults
+        UserDefaults.standard.set(darkModeOn, forKey: UserInterfaceStyleManager.userInterfaceStyleDarkModeOn)
+        
+        // Update interface style
+        UserInterfaceStyleManager.shared.updateUserInterfaceStyle(darkModeOn)
     }
     
 }
