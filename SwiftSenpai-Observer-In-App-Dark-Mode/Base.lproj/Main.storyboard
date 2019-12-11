@@ -31,21 +31,25 @@
                                 <color key="textColor" name="hello-color"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7zj-Be-efR">
-                                <rect key="frame" x="127" y="506" width="161" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7zj-Be-efR">
+                                <rect key="frame" x="20" y="509" width="374" height="50"/>
                                 <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="vC4-Nt-Bag"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                 <state key="normal" title="Settings"/>
                                 <connections>
                                     <segue destination="lIx-iB-wRE" kind="show" id="ezd-Di-RGH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wEu-cw-ydw">
-                                <rect key="frame" x="99" y="581" width="216" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wEu-cw-ydw">
+                                <rect key="frame" x="20" y="579" width="374" height="50"/>
                                 <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="G6g-lX-61Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                 <state key="normal" title="Light Mode Only"/>
                                 <connections>
                                     <segue destination="6Al-SS-nPX" kind="presentation" id="Czv-9T-U5H"/>
@@ -57,9 +61,15 @@
                             <constraint firstItem="DU6-qg-1hV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="44I-QK-wdJ"/>
                             <constraint firstItem="dBZ-eJ-a00" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4Vx-4e-Gnr"/>
                             <constraint firstItem="dBZ-eJ-a00" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="E3u-6K-fnX"/>
+                            <constraint firstItem="7zj-Be-efR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="G5q-vK-DOx"/>
                             <constraint firstItem="dBZ-eJ-a00" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KgZ-MM-obt"/>
+                            <constraint firstItem="wEu-cw-ydw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="MmL-LZ-9dk"/>
+                            <constraint firstItem="7zj-Be-efR" firstAttribute="top" secondItem="DU6-qg-1hV" secondAttribute="bottom" constant="80" id="Rln-7P-R9L"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7zj-Be-efR" secondAttribute="trailing" constant="20" id="T0l-ko-1Cp"/>
+                            <constraint firstItem="wEu-cw-ydw" firstAttribute="top" secondItem="7zj-Be-efR" secondAttribute="bottom" constant="20" id="a5j-Cx-INw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DU6-qg-1hV" secondAttribute="trailing" constant="20" id="k8b-be-E2y"/>
                             <constraint firstItem="DU6-qg-1hV" firstAttribute="top" secondItem="dBZ-eJ-a00" secondAttribute="bottom" constant="8" id="kZa-Gu-T4G"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wEu-cw-ydw" secondAttribute="trailing" constant="20" id="ybd-iP-Yv9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -80,7 +90,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3lf-HJ-W9C" customClass="KSRoundedCornerView" customModule="SwiftSenpai_Observer_In_App_Dark_Mode" customModuleProvider="target">
                                 <rect key="frame" x="87" y="321" width="240" height="200"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subview that follow in app dark mode setting" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJV-86-uRO">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subview using in-app dark mode" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJV-86-uRO">
                                         <rect key="frame" x="16" y="16" width="208" height="168"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                         <nil key="textColor"/>
@@ -105,11 +115,23 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Light Mode View Controller" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O1J-4p-QEO">
+                                <rect key="frame" x="20" y="100" width="374" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="C0u-QX-M5n"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="3lf-HJ-W9C" firstAttribute="centerY" secondItem="W5a-Lh-5Kw" secondAttribute="centerY" id="OX2-3L-ICO"/>
+                            <constraint firstItem="O1J-4p-QEO" firstAttribute="top" secondItem="UZD-ym-C57" secondAttribute="top" constant="100" id="b3y-rt-8iF"/>
+                            <constraint firstItem="UZD-ym-C57" firstAttribute="trailing" secondItem="O1J-4p-QEO" secondAttribute="trailing" constant="20" id="bIB-2a-Zhk"/>
                             <constraint firstItem="3lf-HJ-W9C" firstAttribute="centerX" secondItem="W5a-Lh-5Kw" secondAttribute="centerX" id="qG6-u9-cN2"/>
+                            <constraint firstItem="O1J-4p-QEO" firstAttribute="leading" secondItem="UZD-ym-C57" secondAttribute="leading" constant="20" id="vJr-wJ-pIt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UZD-ym-C57"/>
                     </view>
