@@ -51,8 +51,6 @@ class KSRoundedCornerView: UIView {
         
         layer.borderWidth = borderWidth
         layer.borderColor = borderColor.cgColor
-        
-        print("draw")
     }
     
 }

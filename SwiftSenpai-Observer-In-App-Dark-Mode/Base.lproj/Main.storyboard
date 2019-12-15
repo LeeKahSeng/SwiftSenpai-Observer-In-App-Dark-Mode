@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WbX-vr-gwZ">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -13,17 +13,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="SwiftSenpai_Observer_In_App_Dark_Mode" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header-background" translatesAutoresizingMaskIntoConstraints="NO" id="dBZ-eJ-a00">
-                                <rect key="frame" x="0.0" y="88" width="414" height="278"/>
+                                <rect key="frame" x="0.0" y="87.999999999999986" width="375" height="251.66666666666663"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="dBZ-eJ-a00" secondAttribute="height" multiplier="207:139" id="PDc-uE-JF0"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DU6-qg-1hV">
-                                <rect key="frame" x="20" y="374" width="374" height="55"/>
+                                <rect key="frame" x="20" y="347.66666666666669" width="335" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="aep-yR-FQq"/>
                                 </constraints>
@@ -32,7 +32,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7zj-Be-efR">
-                                <rect key="frame" x="20" y="509" width="374" height="50"/>
+                                <rect key="frame" x="20" y="482.66666666666669" width="335" height="50.000000000000057"/>
                                 <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="vC4-Nt-Bag"/>
@@ -44,7 +44,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wEu-cw-ydw">
-                                <rect key="frame" x="20" y="579" width="374" height="50"/>
+                                <rect key="frame" x="20" y="552.66666666666663" width="335" height="50"/>
                                 <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="G6g-lX-61Z"/>
@@ -84,14 +84,14 @@
             <objects>
                 <viewController id="6Al-SS-nPX" customClass="LightModeOnlyViewController" customModule="SwiftSenpai_Observer_In_App_Dark_Mode" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="W5a-Lh-5Kw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3lf-HJ-W9C" customClass="KSRoundedCornerView" customModule="SwiftSenpai_Observer_In_App_Dark_Mode" customModuleProvider="target">
-                                <rect key="frame" x="87" y="321" width="240" height="200"/>
+                                <rect key="frame" x="52.666666666666657" y="279" width="270" height="200"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subview using in-app dark mode" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJV-86-uRO">
-                                        <rect key="frame" x="16" y="16" width="208" height="168"/>
+                                        <rect key="frame" x="16" y="16" width="238" height="168"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -101,7 +101,7 @@
                                 <constraints>
                                     <constraint firstItem="cJV-86-uRO" firstAttribute="top" secondItem="3lf-HJ-W9C" secondAttribute="top" constant="16" id="8Ve-Ys-cMg"/>
                                     <constraint firstItem="cJV-86-uRO" firstAttribute="leading" secondItem="3lf-HJ-W9C" secondAttribute="leading" constant="16" id="93e-FP-M8u"/>
-                                    <constraint firstAttribute="width" constant="240" id="htV-bS-zKS"/>
+                                    <constraint firstAttribute="width" constant="270" id="htV-bS-zKS"/>
                                     <constraint firstAttribute="trailing" secondItem="cJV-86-uRO" secondAttribute="trailing" constant="16" id="iwg-AH-8t2"/>
                                     <constraint firstAttribute="height" constant="200" id="kPJ-K7-0b2"/>
                                     <constraint firstAttribute="bottom" secondItem="cJV-86-uRO" secondAttribute="bottom" constant="16" id="umT-bN-CUC"/>
@@ -116,7 +116,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Light Mode View Controller" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O1J-4p-QEO">
-                                <rect key="frame" x="20" y="100" width="374" height="27"/>
+                                <rect key="frame" x="20" y="100" width="335" height="27"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="27" id="C0u-QX-M5n"/>
                                 </constraints>
@@ -124,10 +124,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This view controller always show in light mode." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1B-oR-Aya">
+                                <rect key="frame" x="20" y="135" width="335" height="43"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="18"/>
+                                <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="UZD-ym-C57" firstAttribute="trailing" secondItem="G1B-oR-Aya" secondAttribute="trailing" constant="20" id="Kyi-4O-ZXn"/>
+                            <constraint firstItem="G1B-oR-Aya" firstAttribute="leading" secondItem="UZD-ym-C57" secondAttribute="leading" constant="20" id="MJd-8I-aVs"/>
                             <constraint firstItem="3lf-HJ-W9C" firstAttribute="centerY" secondItem="W5a-Lh-5Kw" secondAttribute="centerY" id="OX2-3L-ICO"/>
+                            <constraint firstItem="G1B-oR-Aya" firstAttribute="top" secondItem="O1J-4p-QEO" secondAttribute="bottom" constant="8" id="akv-xK-HMI"/>
                             <constraint firstItem="O1J-4p-QEO" firstAttribute="top" secondItem="UZD-ym-C57" secondAttribute="top" constant="100" id="b3y-rt-8iF"/>
                             <constraint firstItem="UZD-ym-C57" firstAttribute="trailing" secondItem="O1J-4p-QEO" secondAttribute="trailing" constant="20" id="bIB-2a-Zhk"/>
                             <constraint firstItem="3lf-HJ-W9C" firstAttribute="centerX" secondItem="W5a-Lh-5Kw" secondAttribute="centerX" id="qG6-u9-cN2"/>
@@ -139,24 +148,24 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oqY-6i-I5X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1795.6521739130437" y="856.47321428571422"/>
+            <point key="canvasLocation" x="1794.4000000000001" y="856.4039408866995"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="ptB-s4-K7L">
             <objects>
                 <viewController id="lIx-iB-wRE" customClass="SettingsViewController" customModule="SwiftSenpai_Observer_In_App_Dark_Mode" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZDr-Np-ypn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jfA-ob-75r">
-                                <rect key="frame" x="182.5" y="432.5" width="51" height="31"/>
+                                <rect key="frame" x="163" y="390.66666666666669" width="51" height="31"/>
                                 <connections>
                                     <action selector="darkModeSwitchValueChanged:" destination="lIx-iB-wRE" eventType="valueChanged" id="82A-O1-9Yq"/>
                                 </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dark Mode" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WjP-nq-ejj">
-                                <rect key="frame" x="20" y="394" width="374" height="30"/>
+                                <rect key="frame" x="20" y="352" width="335" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -187,7 +196,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WbX-vr-gwZ" customClass="MyNavigationController" customModule="SwiftSenpai_Observer_In_App_Dark_Mode" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FrH-GN-G5c">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

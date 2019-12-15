@@ -19,6 +19,7 @@ struct UserInterfaceStyleManager {
     private init() { }
     
     private(set) var currentStyle: UIUserInterfaceStyle = UserDefaults.standard.bool(forKey: UserInterfaceStyleManager.userInterfaceStyleDarkModeOn) ? .dark : .light {
+        // Property observer to trigger every time value is set to currentStyle
         didSet {
             if currentStyle != oldValue {
                 // Trigger notification when currentStyle value changed
@@ -33,6 +34,7 @@ extension UserInterfaceStyleManager {
     
     mutating func addObserver(_ observer: UserInterfaceStyleObserver) {
         let id = ObjectIdentifier(observer)
+        // Create a weak reference observer and add to dictionary
         observers[id] = WeakStyleObserver(observer: observer)
     }
     
@@ -56,6 +58,7 @@ private extension UserInterfaceStyleManager {
                 continue
             }
             
+            // Notify observer by triggering userInterfaceStyleManager(_:didChangeStyle:)
             observer.userInterfaceStyleManager(self, didChangeStyle: currentStyle)
         }
     }
